@@ -155,11 +155,11 @@
 		A4C844A8250122EA00C26BF9 /* Video Collection */ = {
 			isa = PBXGroup;
 			children = (
+				A4E968A325014D7100155B91 /* Presenter */,
 				A4C844AF250123C300C26BF9 /* Worker */,
 				A4C844AE250123BD00C26BF9 /* Entity */,
 				A4C844AD2501232600C26BF9 /* Protocols */,
 				A4C844AC2501231700C26BF9 /* Views */,
-				A4C844AB2501230E00C26BF9 /* Presenter */,
 				A4C844AA2501230500C26BF9 /* Interactor */,
 				A4C844A9250122F700C26BF9 /* Wireframe */,
 			);
@@ -180,14 +180,6 @@
 				A4C844C825012A9000C26BF9 /* VideoCollectionInteractor.swift */,
 			);
 			path = Interactor;
-			sourceTree = "<group>";
-		};
-		A4C844AB2501230E00C26BF9 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				A4C844CC25012AFE00C26BF9 /* VideoCollectionPresenter.swift */,
-			);
-			name = Presenter;
 			sourceTree = "<group>";
 		};
 		A4C844AC2501231700C26BF9 /* Views */ = {
@@ -283,6 +275,14 @@
 				A4C844D625012D9F00C26BF9 /* VideoCollectionCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		A4E968A325014D7100155B91 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844CC25012AFE00C26BF9 /* VideoCollectionPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		EAE1EC3C5F750D600FCBF610 /* Pods */ = {
