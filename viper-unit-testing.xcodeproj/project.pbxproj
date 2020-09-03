@@ -3,17 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08F695F84F9D27865B287B29 /* Pods_viper_unit_testing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D964F934607BF099A854DA /* Pods_viper_unit_testing.framework */; };
 		A4C844872501220500C26BF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844862501220500C26BF9 /* AppDelegate.swift */; };
 		A4C844892501220500C26BF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844882501220500C26BF9 /* SceneDelegate.swift */; };
-		A4C8448B2501220500C26BF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C8448A2501220500C26BF9 /* ViewController.swift */; };
-		A4C8448E2501220500C26BF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C8448C2501220500C26BF9 /* Main.storyboard */; };
+		A4C8448B2501220500C26BF9 /* VideoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C8448A2501220500C26BF9 /* VideoCollectionViewController.swift */; };
 		A4C844902501220600C26BF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C8448F2501220600C26BF9 /* Assets.xcassets */; };
 		A4C844932501220600C26BF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C844912501220600C26BF9 /* LaunchScreen.storyboard */; };
 		A4C8449E2501220600C26BF9 /* viper_unit_testingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C8449D2501220600C26BF9 /* viper_unit_testingTests.swift */; };
+		A4C844B2250125A100C26BF9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844B1250125A100C26BF9 /* BaseView.swift */; };
+		A4C844B4250125C500C26BF9 /* VideoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844B3250125C500C26BF9 /* VideoCollectionView.swift */; };
+		A4C844B6250126C000C26BF9 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844B5250126C000C26BF9 /* VideoModel.swift */; };
+		A4C844BB2501278800C26BF9 /* DAOVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844BA2501278800C26BF9 /* DAOVideo.swift */; };
+		A4C844BD250127A800C26BF9 /* DAOVideoBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844BC250127A800C26BF9 /* DAOVideoBaseClass.swift */; };
+		A4C844C0250127DF00C26BF9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844BF250127DF00C26BF9 /* Network.swift */; };
+		A4C844C22501285700C26BF9 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4C844C12501285700C26BF9 /* Config.plist */; };
+		A4C844C52501287F00C26BF9 /* ConfigApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844C42501287F00C26BF9 /* ConfigApps.swift */; };
+		A4C844C7250129C600C26BF9 /* VideoCollectionProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844C6250129C600C26BF9 /* VideoCollectionProtocols.swift */; };
+		A4C844C925012A9000C26BF9 /* VideoCollectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844C825012A9000C26BF9 /* VideoCollectionInteractor.swift */; };
+		A4C844CB25012AC700C26BF9 /* VideoCollectionWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844CA25012AC700C26BF9 /* VideoCollectionWireframe.swift */; };
+		A4C844CD25012AFE00C26BF9 /* VideoCollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844CC25012AFE00C26BF9 /* VideoCollectionPresenter.swift */; };
+		A4C844CF25012B3600C26BF9 /* VideoCollectionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844CE25012B3600C26BF9 /* VideoCollectionWorker.swift */; };
+		A4C844D225012CC600C26BF9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844D125012CC600C26BF9 /* Constants.swift */; };
+		A4C844D525012D8700C26BF9 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844D425012D8700C26BF9 /* BaseCell.swift */; };
+		A4C844D725012D9F00C26BF9 /* VideoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C844D625012D9F00C26BF9 /* VideoCollectionCell.swift */; };
+		D41D9810BFD01DA919FDDC79 /* Pods_viper_unit_testingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB25AFB35F791446A821DF2F /* Pods_viper_unit_testingTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +44,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12125433A3AE77FC6964248F /* Pods-viper-unit-testing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper-unit-testing.debug.xcconfig"; path = "Target Support Files/Pods-viper-unit-testing/Pods-viper-unit-testing.debug.xcconfig"; sourceTree = "<group>"; };
+		29A0D356C4513B3382BD320F /* Pods-viper-unit-testing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper-unit-testing.release.xcconfig"; path = "Target Support Files/Pods-viper-unit-testing/Pods-viper-unit-testing.release.xcconfig"; sourceTree = "<group>"; };
+		575B864A7674D68D306F6446 /* Pods-viper-unit-testingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper-unit-testingTests.debug.xcconfig"; path = "Target Support Files/Pods-viper-unit-testingTests/Pods-viper-unit-testingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2931505C6F8A8ED37C6FC88 /* Pods-viper-unit-testingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper-unit-testingTests.release.xcconfig"; path = "Target Support Files/Pods-viper-unit-testingTests/Pods-viper-unit-testingTests.release.xcconfig"; sourceTree = "<group>"; };
 		A4C844832501220500C26BF9 /* viper-unit-testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "viper-unit-testing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C844862501220500C26BF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4C844882501220500C26BF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A4C8448A2501220500C26BF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A4C8448D2501220500C26BF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4C8448A2501220500C26BF9 /* VideoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewController.swift; sourceTree = "<group>"; };
 		A4C8448F2501220600C26BF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4C844922501220600C26BF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4C844942501220600C26BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4C844992501220600C26BF9 /* viper-unit-testingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "viper-unit-testingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C8449D2501220600C26BF9 /* viper_unit_testingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viper_unit_testingTests.swift; sourceTree = "<group>"; };
 		A4C8449F2501220600C26BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C844B1250125A100C26BF9 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A4C844B3250125C500C26BF9 /* VideoCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionView.swift; sourceTree = "<group>"; };
+		A4C844B5250126C000C26BF9 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		A4C844BA2501278800C26BF9 /* DAOVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOVideo.swift; sourceTree = "<group>"; };
+		A4C844BC250127A800C26BF9 /* DAOVideoBaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOVideoBaseClass.swift; sourceTree = "<group>"; };
+		A4C844BF250127DF00C26BF9 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		A4C844C12501285700C26BF9 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		A4C844C42501287F00C26BF9 /* ConfigApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigApps.swift; sourceTree = "<group>"; };
+		A4C844C6250129C600C26BF9 /* VideoCollectionProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionProtocols.swift; sourceTree = "<group>"; };
+		A4C844C825012A9000C26BF9 /* VideoCollectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionInteractor.swift; sourceTree = "<group>"; };
+		A4C844CA25012AC700C26BF9 /* VideoCollectionWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionWireframe.swift; sourceTree = "<group>"; };
+		A4C844CC25012AFE00C26BF9 /* VideoCollectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionPresenter.swift; sourceTree = "<group>"; };
+		A4C844CE25012B3600C26BF9 /* VideoCollectionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionWorker.swift; sourceTree = "<group>"; };
+		A4C844D125012CC600C26BF9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A4C844D425012D8700C26BF9 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		A4C844D625012D9F00C26BF9 /* VideoCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionCell.swift; sourceTree = "<group>"; };
+		BB25AFB35F791446A821DF2F /* Pods_viper_unit_testingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_viper_unit_testingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D964F934607BF099A854DA /* Pods_viper_unit_testing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_viper_unit_testing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08F695F84F9D27865B287B29 /* Pods_viper_unit_testing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +91,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41D9810BFD01DA919FDDC79 /* Pods_viper_unit_testingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AEA412792ED7B47C254E0ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9D964F934607BF099A854DA /* Pods_viper_unit_testing.framework */,
+				BB25AFB35F791446A821DF2F /* Pods_viper_unit_testingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A4C8447A2501220500C26BF9 = {
 			isa = PBXGroup;
 			children = (
 				A4C844852501220500C26BF9 /* viper-unit-testing */,
 				A4C8449C2501220600C26BF9 /* viper-unit-testingTests */,
 				A4C844842501220500C26BF9 /* Products */,
+				EAE1EC3C5F750D600FCBF610 /* Pods */,
+				8AEA412792ED7B47C254E0ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +130,15 @@
 		A4C844852501220500C26BF9 /* viper-unit-testing */ = {
 			isa = PBXGroup;
 			children = (
+				A4C844D025012CB800C26BF9 /* Utils */,
+				A4C844B7250126D400C26BF9 /* Network */,
+				A4C844A8250122EA00C26BF9 /* Video Collection */,
 				A4C844862501220500C26BF9 /* AppDelegate.swift */,
 				A4C844882501220500C26BF9 /* SceneDelegate.swift */,
-				A4C8448A2501220500C26BF9 /* ViewController.swift */,
-				A4C8448C2501220500C26BF9 /* Main.storyboard */,
 				A4C8448F2501220600C26BF9 /* Assets.xcassets */,
 				A4C844912501220600C26BF9 /* LaunchScreen.storyboard */,
 				A4C844942501220600C26BF9 /* Info.plist */,
+				A4C844C12501285700C26BF9 /* Config.plist */,
 			);
 			path = "viper-unit-testing";
 			sourceTree = "<group>";
@@ -99,6 +152,150 @@
 			path = "viper-unit-testingTests";
 			sourceTree = "<group>";
 		};
+		A4C844A8250122EA00C26BF9 /* Video Collection */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844AF250123C300C26BF9 /* Worker */,
+				A4C844AE250123BD00C26BF9 /* Entity */,
+				A4C844AD2501232600C26BF9 /* Protocols */,
+				A4C844AC2501231700C26BF9 /* Views */,
+				A4C844AB2501230E00C26BF9 /* Presenter */,
+				A4C844AA2501230500C26BF9 /* Interactor */,
+				A4C844A9250122F700C26BF9 /* Wireframe */,
+			);
+			path = "Video Collection";
+			sourceTree = "<group>";
+		};
+		A4C844A9250122F700C26BF9 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844CA25012AC700C26BF9 /* VideoCollectionWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		A4C844AA2501230500C26BF9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844C825012A9000C26BF9 /* VideoCollectionInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A4C844AB2501230E00C26BF9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844CC25012AFE00C26BF9 /* VideoCollectionPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		A4C844AC2501231700C26BF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844D325012D7A00C26BF9 /* Cell */,
+				A4C8448A2501220500C26BF9 /* VideoCollectionViewController.swift */,
+				A4C844B1250125A100C26BF9 /* BaseView.swift */,
+				A4C844B3250125C500C26BF9 /* VideoCollectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A4C844AD2501232600C26BF9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844C6250129C600C26BF9 /* VideoCollectionProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A4C844AE250123BD00C26BF9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844B5250126C000C26BF9 /* VideoModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A4C844AF250123C300C26BF9 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844CE25012B3600C26BF9 /* VideoCollectionWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		A4C844B7250126D400C26BF9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844C32501286500C26BF9 /* Common */,
+				A4C844BE250127CD00C26BF9 /* NetworkManager */,
+				A4C844B82501274700C26BF9 /* DAO */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A4C844B82501274700C26BF9 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844B92501274D00C26BF9 /* Video */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		A4C844B92501274D00C26BF9 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844BA2501278800C26BF9 /* DAOVideo.swift */,
+				A4C844BC250127A800C26BF9 /* DAOVideoBaseClass.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		A4C844BE250127CD00C26BF9 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844BF250127DF00C26BF9 /* Network.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		A4C844C32501286500C26BF9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844C42501287F00C26BF9 /* ConfigApps.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A4C844D025012CB800C26BF9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844D125012CC600C26BF9 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A4C844D325012D7A00C26BF9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A4C844D425012D8700C26BF9 /* BaseCell.swift */,
+				A4C844D625012D9F00C26BF9 /* VideoCollectionCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EAE1EC3C5F750D600FCBF610 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12125433A3AE77FC6964248F /* Pods-viper-unit-testing.debug.xcconfig */,
+				29A0D356C4513B3382BD320F /* Pods-viper-unit-testing.release.xcconfig */,
+				575B864A7674D68D306F6446 /* Pods-viper-unit-testingTests.debug.xcconfig */,
+				A2931505C6F8A8ED37C6FC88 /* Pods-viper-unit-testingTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4C844A22501220600C26BF9 /* Build configuration list for PBXNativeTarget "viper-unit-testing" */;
 			buildPhases = (
+				446B77CC597A4A50B5B3EBE4 /* [CP] Check Pods Manifest.lock */,
 				A4C8447F2501220500C26BF9 /* Sources */,
 				A4C844802501220500C26BF9 /* Frameworks */,
 				A4C844812501220500C26BF9 /* Resources */,
+				9727AFCC600FB95913B51E21 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +322,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4C844A52501220600C26BF9 /* Build configuration list for PBXNativeTarget "viper-unit-testingTests" */;
 			buildPhases = (
+				CD265A4F206DCCBA5B0C85E8 /* [CP] Check Pods Manifest.lock */,
 				A4C844952501220600C26BF9 /* Sources */,
 				A4C844962501220600C26BF9 /* Frameworks */,
 				A4C844972501220600C26BF9 /* Resources */,
@@ -181,8 +381,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4C844932501220600C26BF9 /* LaunchScreen.storyboard in Resources */,
+				A4C844C22501285700C26BF9 /* Config.plist in Resources */,
 				A4C844902501220600C26BF9 /* Assets.xcassets in Resources */,
-				A4C8448E2501220500C26BF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +395,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		446B77CC597A4A50B5B3EBE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-viper-unit-testing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9727AFCC600FB95913B51E21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-viper-unit-testing/Pods-viper-unit-testing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-viper-unit-testing/Pods-viper-unit-testing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-viper-unit-testing/Pods-viper-unit-testing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD265A4F206DCCBA5B0C85E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-viper-unit-testingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A4C8447F2501220500C26BF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4C8448B2501220500C26BF9 /* ViewController.swift in Sources */,
+				A4C844B4250125C500C26BF9 /* VideoCollectionView.swift in Sources */,
+				A4C844B6250126C000C26BF9 /* VideoModel.swift in Sources */,
+				A4C844BB2501278800C26BF9 /* DAOVideo.swift in Sources */,
+				A4C844D225012CC600C26BF9 /* Constants.swift in Sources */,
+				A4C8448B2501220500C26BF9 /* VideoCollectionViewController.swift in Sources */,
 				A4C844872501220500C26BF9 /* AppDelegate.swift in Sources */,
+				A4C844C0250127DF00C26BF9 /* Network.swift in Sources */,
+				A4C844CB25012AC700C26BF9 /* VideoCollectionWireframe.swift in Sources */,
 				A4C844892501220500C26BF9 /* SceneDelegate.swift in Sources */,
+				A4C844CD25012AFE00C26BF9 /* VideoCollectionPresenter.swift in Sources */,
+				A4C844BD250127A800C26BF9 /* DAOVideoBaseClass.swift in Sources */,
+				A4C844D725012D9F00C26BF9 /* VideoCollectionCell.swift in Sources */,
+				A4C844D525012D8700C26BF9 /* BaseCell.swift in Sources */,
+				A4C844C925012A9000C26BF9 /* VideoCollectionInteractor.swift in Sources */,
+				A4C844B2250125A100C26BF9 /* BaseView.swift in Sources */,
+				A4C844C7250129C600C26BF9 /* VideoCollectionProtocols.swift in Sources */,
+				A4C844CF25012B3600C26BF9 /* VideoCollectionWorker.swift in Sources */,
+				A4C844C52501287F00C26BF9 /* ConfigApps.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +504,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A4C8448C2501220500C26BF9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A4C8448D2501220500C26BF9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A4C844912501220600C26BF9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -360,6 +631,7 @@
 		};
 		A4C844A32501220600C26BF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12125433A3AE77FC6964248F /* Pods-viper-unit-testing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +650,7 @@
 		};
 		A4C844A42501220600C26BF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29A0D356C4513B3382BD320F /* Pods-viper-unit-testing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +669,7 @@
 		};
 		A4C844A62501220600C26BF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 575B864A7674D68D306F6446 /* Pods-viper-unit-testingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +692,7 @@
 		};
 		A4C844A72501220600C26BF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2931505C6F8A8ED37C6FC88 /* Pods-viper-unit-testingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

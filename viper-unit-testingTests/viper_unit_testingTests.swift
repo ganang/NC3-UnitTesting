@@ -7,27 +7,84 @@
 //
 
 import XCTest
+import SwiftyJSON
 @testable import viper_unit_testing
 
 class viper_unit_testingTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testVideoGetCollectionWithExpectedURLHostAndPath() {
+        XCTAssertEqual(Network.baseURLString, "https://podcast.ganangariefp.xyz")
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testGetVideoCollectionSuccessReturnsVideos() {
+        let videoCollectionWorker = VideoCollectionWorker()
+        let params: [String: Any] = ["uid": "000162.8e7c7038d98a4c57a6be27e4906402be.1511"]
+        
+        let videosExpectation = expectation(description: "videos")
+        var videosResponse: [VideoModel]?
+        
+        videoCollectionWorker.getCollections(onSuccess: { (videos) in
+            videosResponse = videos
+            videosExpectation.fulfill()
+        }, onFailed: { (error) in
+        }, params)
+        
+        waitForExpectations(timeout: 1) { (error) in
+            XCTAssertNotNil(videosResponse)
+        }
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testGetVideoCollectionWhenResponseErrorReturnsError() {
+        let videoCollectionWorker = VideoCollectionWorker()
+        let params: [String: Any] = ["uid": "000162.8e7c7038d98a4c57a6be27e4906402be"]
+        
+        let errorExpectation = expectation(description: "error")
+        var errorResponse: String?
+        
+        videoCollectionWorker.getCollections(onSuccess: { (videos) in
+        }, onFailed: { (error) in
+            errorResponse = error
+            errorExpectation.fulfill()
+        }, params)
+        
+        waitForExpectations(timeout: 1) { (error) in
+            XCTAssertNotNil(errorResponse)
+        }
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testGetVideoCollectionEmptyDataReturnsError() {
+        let videoCollectionWorker = VideoCollectionWorker()
+        let videosResponseJSON: JSON = JSON("")
+        
+        let errorExpectation = expectation(description: "error")
+        var errorResponse: String?
+        
+        videoCollectionWorker.changeJSONToVideoModel(json: videosResponseJSON, onSuccess: { (videos) in
+        }) { (error) in
+            errorResponse = error
+            errorExpectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 1) { (error) in
+            XCTAssertNotNil(errorResponse)
+        }
+    }
+    
+    func testGetVideoCollectionInvalidJSONReturnsError() {
+        let videoCollectionWorker = VideoCollectionWorker()
+        let videosResponseJSON: JSON = JSON("[{\"xxx\"}]")
+        
+        let errorExpectation = expectation(description: "error")
+        var errorResponse: String?
+        
+        videoCollectionWorker.changeJSONToVideoModel(json: videosResponseJSON, onSuccess: { (videos) in
+        }) { (error) in
+            errorResponse = error
+            errorExpectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 1) { (error) in
+            XCTAssertNotNil(errorResponse)
         }
     }
 
